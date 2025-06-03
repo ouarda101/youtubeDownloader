@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-2xl font-bold mb-6 text-gray-800">YouTube Video Downloader</h1>
+
+        <div class="input-group">
+            <label for="videoUrl">Video URL:</label>
+            <input type="text" id="videoUrl" placeholder="Paste YouTube link here">
+        </div>
+
+        <button id="downloadBtn" class="btn">
+            <img src="images/download.png" alt="" class="download-icon">
+            <span>Download Video</span>
+        </button>
+
+        <div id="loadingSpinner" class="loading-spinner mt-4"></div>
+        <div id="messageDisplay" class="message hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
